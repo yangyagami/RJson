@@ -7,7 +7,9 @@ int main() {
 	json::Value value;
 	json::Parser parser(test, value);
 	std::cout << "json : " << parser.stringify(value) << std::endl;
-	std::cout << "gg : " << value.getObjectElement("gg").getArrayElement(0).getNumber();
+	std::cout << "gg : " << value.getObjectElement("gg").getArrayElement(0).getNumber() << std::endl;
 	value.destory();
 	return 0;
 }
+
+
